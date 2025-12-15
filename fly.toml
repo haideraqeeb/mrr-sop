@@ -1,5 +1,10 @@
-app = 'mrr-sop-calculator' 
-primary_region = 'bom' 
+# fly.toml app configuration file generated for mrr-sop on 2025-12-15T04:34:55Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'mrr-sop'
+primary_region = 'bom'
 
 [build]
 
@@ -12,6 +17,7 @@ primary_region = 'bom'
   processes = ['app']
 
 [[vm]]
+  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 256
+  memory_mb = 1024
